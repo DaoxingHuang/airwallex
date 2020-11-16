@@ -3,7 +3,7 @@
     <el-header><al-header/></el-header>
     <el-main><al-content/></el-main>
     <el-footer height='100px'><al-footer/></el-footer>
-   </el-container>
+  </el-container>
 </template>
 
 
@@ -18,7 +18,7 @@ export default {
   components: {
     AlHeader,
     AlContent,
-    AlFooter
+    AlFooter,
   }
 }
 </script>

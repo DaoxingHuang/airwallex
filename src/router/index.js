@@ -4,9 +4,9 @@ import VueRouter from 'vue-router';
 export default new VueRouter({
     routes: [
         { 
-            path: '/helloworld', 
-            name: 'helloworld',
-            component: () => import(/* webpackChunkName: "helloworld" */ '../views/Main.vue'),
+            path: '/', 
+            name: 'home',
+            component: () => import(/* webpackChunkName: "main" */ '../views/Main.vue'),
         }
     ]
 });

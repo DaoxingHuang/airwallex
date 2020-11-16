@@ -11,8 +11,6 @@ import { SERVER } from "./config";
  * 
  */
 fetch('./data.json').then(async res=>{
-  // eslint-disable-next-line no-debugger
-  debugger;
   const metaData =  await res.json();
   SERVER.FakeAuth = metaData.FakeAuth;
   renderVueApp();

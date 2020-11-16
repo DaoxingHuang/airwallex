@@ -17,8 +17,6 @@ export default class RequestInvite{
 
     mutations = {
         [UPDATE_REQUEST_STATE]:(state)=>{
-            // eslint-disable-next-line no-debugger
-            debugger;
             state.name = this.initizeState.name;
             state.email = this.initizeState.email;
             state.confirmEmail = this.initizeState.confirmEmail;
@@ -28,8 +26,6 @@ export default class RequestInvite{
     actions = {
         [SEND_REQUEST_A_INVITE]:async ({commit},payload)=>{
             const ret =await HTTP.post(SERVER.FakeAuth, payload);
-            // eslint-disable-next-line no-debugger
-            debugger;
             commit(UPDATE_REQUEST_STATE);
             return ret;
         }

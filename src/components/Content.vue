@@ -5,7 +5,7 @@
     <div class="action">
       <el-button @click="centerDialogVisible = true">Request a invite</el-button>
     </div>
-    <el-dialog
+    <el-dialog :close-on-click-modal="false"
       title="Request a invite" width="20rem"
       :visible.sync="centerDialogVisible" center>
       <span></span>
@@ -71,8 +71,6 @@ export default {
         });
     },
     validateConfirmEmail(rule, value, callback){
-        // eslint-disable-next-line no-debugger
-        debugger;
         if(value !== this.invite.email){
             callback(new Error('The confimed email is not the same'));
         }

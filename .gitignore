@@ -62,3 +62,6 @@ typings/
 
 #idea
 .idea
+
+#others
+dist
